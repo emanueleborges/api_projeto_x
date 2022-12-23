@@ -1,0 +1,39 @@
+<div class="row justify-content-center py-3">
+
+ <div class="col-12 col-md-12 ">
+
+<div class="modal-content rounded-5 shadow  p-4 pt-5" >
+
+<div class="form-group row">
+  <div class="col-sm-12">
+      <a [routerLink]="['/category/create']" class="btn btn-success ">CADASTRAR NOVA CATEGORIA</a>
+  </div>
+</div>
+
+<br />
+
+<h2>Category Lista</h2>
+
+<table class="table table-striped">
+  <thead class="border">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Delete</th>
+      </tr>
+  </thead>
+  <tbody class="border">
+      <tr *ngFor='let categorias of category'>
+          <td>{{ categorias.id }}</td>
+          <td>{{ categorias.Name }}</td>
+          <td>
+              <button  class="btn btn-danger" (click)="Delete(categorias.id)">Delete</button>
+          </td>
+      </tr>
+  </tbody>
+</table>
+<router-outlet></router-outlet>
+
+</div>
+</div>
+</div>

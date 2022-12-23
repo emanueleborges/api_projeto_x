@@ -1,0 +1,33 @@
+<div class="row justify-content-center py-3">
+
+  <div class="col-12 col-md-12 ">
+
+  <div class="modal-content rounded-5 shadow  p-4 pt-5" >
+
+    <div class="form-group">
+      <label for="usr">Color:</label>
+      <input type="text" class="form-control" id="Color" [(ngModel)]="request.Color">
+    </div>
+
+    <div class="form-group">
+      <label for="usr">PartNumber:</label>
+      <input type="text" class="form-control" id="PartNumber" [(ngModel)]="request.PartNumber">
+    </div>
+
+    <div class="form-group">
+      <label for="usr">Category_fk:</label>
+      <select type="text" class="form-select" id="Category_fk" [(ngModel)]="request.Category_fk">
+        <option *ngFor="let categorias of category" value= {{categorias.id}}> {{categorias.Name}} </option>
+      </select>
+    </div>
+
+    <div class="form-group text-right py-3">
+      <button type="submit" class="btn btn-success float-left" (click)="Save()">Save</button>
+      &nbsp;
+      <button type="submit" class="btn btn-primary float-righ" (click)="Cancel()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+</div>
+
