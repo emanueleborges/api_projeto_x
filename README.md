@@ -1,65 +1,109 @@
-Eldorado Tech Training 2º edição
+Desenvolva uma aplicação em Angular2+ para um corretor de imóveis onde:
 
-GitHub: Projeto Final Eldorado
-https://github.com/emanueleborges/eldorado-projetofinal
+ 
 
-Desafio Final
+Obrigatório:
 
-Você deve implementar um aplicativo web de gerenciamento de dispositivos
-simples.
-Semana 1:
-- Criação do repositório no GitHub (único para back-end e front-end)
-- Criação de uma REST API em Node.js (versão 10 ou superior)
-- Estrutura inicial
-- Conexão com o banco de dados
-- Modelagem das entidades
-- Criação da estrutura de banco de dados
-- Utilizar o MySQL
-- Modelagem das seguintes entidades:
-- Device:
-- Id: (gerado automaticamente. Inteiro e incremental)
-- Category: uma seleção suspensa que você pode escolher entre
-todas as categorias
-- acessível.
-- Color: Campo de texto, com validação (somente letras, tamanho
-máximo 16)
-- PartNumber: campo inteiro positivo, com validação.
-- Category:
-- Id: (gerado automaticamente, inteiro e incremental)
-- Name: Não deve estar vazio. Todas as categorias devem ter um
-nome. Tamanho máximo 128 caracteres.
-- Todos os campos são obrigatórios.
-- Você deve fornecer o script (SQL ou qualquer script de migração/versão de
-banco de dados) que pode criar o banco de dados do zero.
-- Use o GIT, confirme cada progresso que você fez e compartilhe seu código
-em um repositório público do github.
-Semana 2:
-- Criação dos endpoints para criar, ler e excluir
-- Para cada entidade
-- Utilizando TDD
-- Utilizando padrões de projeto (utilizar pelo menos um padrão
-comportamental)
-Semana 3:
-- Criação da autenticação via API
-- Criação de uma aplicativo web com Angular 8 ou superior
-- Você deve usar um pré-processador CSS
-- Criação da página de login
-Semana 4:
-- O aplicativo web deve ter um menu com duas opções:
-- Gerenciamento de Categoria
-- Dispositivo Gestão
-Semana 5:
-- Implante seu projeto em um provedor de nuvem (AWS, GCP, Heroku ou
-qualquer outro) e envie a URL do seu aplicativo da web e a URL do seu
-repositório GIT.
-- AWS é o preferido. Nossa recomendação é se inscrever para uma conta
-gratuita e usar:
-- Uma instância T2 micro EC2 (para back-end)
-- Uma micro instância RDS T2 (para banco de dados)
-- O front-end pode ser implantado no bucket estático do S3 ou na
-mesma instância do EC2 usada para o back-end (para evitar custos
-adicionais).
-- Caso o projeto não possa ser implantado, ele deve estar pronto para ser
-executado e instalado em uma máquina Linux Ubuntu 18. O processo de
-avaliação seria:
-- Clone o repositório. (crie o banco de dados local com base no script
+1) Possua tela de login.
+
+ 
+
+2) Opção de cadastro no login.
+
+ 
+
+3) Após realizar login deverá apareçar header e menu lateral.
+
+ 
+
+4) No menu deverá ter:
+
+              4.1) Opção para editar os dados do usuário
+
+              4.2) Opção para cadastrar imóveis*
+
+              4.3) Opção para acessar um dashboard**
+
+ 
+
+5) API em node ou python utilizando qualquer framework;
+
+              5.1) Deverá ser implementado JWT
+
+              5.2) Não precisa de banco de dados
+
+              5.3) A API só devera responder requisições autenticadas.
+
+ 
+
+6) Os códigos devem ser versionados no git, e compartilhados com o e-mail: marcos.deilson@gmail.com
+
+ 
+
+Imóveis:
+
+Além de conter os dados mínimos de um imóvel, deverá conter informações de compra e venda e tenha opção de anexar fotos do imóvel.
+
+ 
+
+Exemplo: valor de compra, valor de venda, percentual de lucro.
+
+Um imóvel cadastro pode não ter sido vendido, estaria em "estoque".
+
+ 
+
+*Dashboard:
+
+Os dados para gestão e controle do corretor.
+
+Nos apresente as informações extraindo o máximo dos dados disponíveis.
+
+ 
+
+Utilize tudo que souber do framework:
+
+Guarda de rota, Interceptor, Components, Services, etc.
+
+ 
+
+Tudo que for necessário para subir e realizar o teste/demonstração da aplicação deverá estar no README
+
+ 
+
+Extras:
+
+Deploy da aplicação em qualquer serviço, por exemplo: Heroku
+
+ 
+
+Se faltou informação, algo não fez sentido ou está errado, tome a liberdade de aplicar a correção que julgar necessária e descreva o erro/solução no README.
+
+ 
+
+Técnicamente irei avaliar o projeto, outras pessoas vão avaliar como se fossem os corretores.
+
+ 
+
+Nos surpreenda.
+
+ 
+
+ 
+
+ 
+
+ 
+
+Att e obrigado,
+
+Eustáquio Bandeira
+
+Gerente de Projetos
+
+PROJEX CONSULTORIA E PROJETOS LTDA.
+
+Telefone: (92) 9.8196-8345
+
+E-mail: eustaquio.bandeira@projexsystem.com
+
+Endereço: Rua Professor Castelo Branco, nº 5, Conj. Jardim Yolanda, Parque 10 de Novembro.
